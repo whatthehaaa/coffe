@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    
+<mapper namespace="mapper.member">
+
+	<select id="searchlist" parameterType="map" resultType="com.spring.vo.CoffeeMemberVO">
+	select * from 
+					 (select rownum rno, id, name, hp,  to_char(mdate,'yyyy.mm.dd') mdate 
+					 from (select * from coffeemember order by mdate desc)
+					<if test="sname != 'total'">
+		  			where ${sname}=#{svalue}	
+	</if>
+					) 	
+				where rno between #{start} and #{end}
+</select>
+
+<select	id="listcountajax" parameterType="map" resultType="int">
+	select count(*) from cgvmember
+	<if test="sname != 'total'">
+		  where ${sname}=#{svalue}	
+		  <!-- #(sname) = 'id' = '홍길동' -->
+		  <!-- $(sname) = id = '홍길동' -->
+	</if>
+</select>
+
+
+	<select id="findName" parameterType="java.lang.String" resultType="int">
+		select count(*) from coffee_member where name=#{name}
+	</select>
+	
+	<select id="findHp" parameterType="java.lang.String" resultType="int">
+		select count(*) from coffee_member where hp=#{hp}
+	</select>
+	
+	<select id="findId" parameterType="map" resultType="com.spring.vo.CoffeeMemberVO">
+		SELECT ID FROM coffee_member WHERE NAME=#{name} AND HP=#{hp}
+	</select>
+	
+	<select id="findPass" parameterType="map" resultType="com.spring.vo.CoffeeMemberVO">
+		SELECT PASS FROM coffee_member WHERE ID=#{id}
+	</select>
+	
+    <select id="login" parameterType="com.spring.vo.CoffeeMemberVO" resultType="com.spring.vo.SessionVO">
+				select count(*) result,name from coffee_member 
+					WHERE ID=#{id} AND PASS=#{pass} group by name
+	</select>
+
+	<select id="idCheck" parameterType="java.lang.String" resultType="int">
+		select count(*) from coffee_member where id=#{id}
+	</select>
+
+    <insert id="join" parameterType="com.spring.vo.CoffeeMemberVO">
+    	INSERT INTO COFFEE_MEMBER VALUES(#{name},#{id},#{pass},#{email},#{hp},sysdate,#{spass})
+    </insert>
+	
+	
+</mapper>

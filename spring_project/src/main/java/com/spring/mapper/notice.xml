@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.notice">
+
+
+	<!-- notice:listcount -->
+	<select id="listcount" resultType="int">
+		select count(*) from
+		TESTNOTICE
+	</select>
+
+	<select id="list" parameterType="map"
+		resultType="com.spring.vo.TestNoticeVO">
+		select * from (select rownum rno, nid, ntitle,
+		to_char(ndate,'yyyy.mm.dd') ndate,
+		nhits, nsfile_t nfile_t
+		from (select * from TESTNOTICE order by ndate desc))
+		where rno between #{start} and #{end}
+	</select>
+
+	<select id="content" parameterType="java.lang.String"
+		resultType="com.spring.vo.TestNoticeVO">
+		select nid,ntitle, ncontent ,to_char(ndate,'yyyy.mm.dd') ndate,
+		nhits, nfile,
+		nsfile, nfile_t, nsfile_t
+		from TESTNOTICE where nid=#{nid}
+	</select>
+	
+	<insert id="insert" parameterType="com.spring.vo.TestNoticeVO">
+		insert into TESTNOTICE
+		  values('n_'||sequ_TESTNOTICE.nextval,
+		  #{ntitle},#{ncontent},#{nfile},#{nsfile},#{nfile_t},#{nsfile_t},#{ndate},0)
+	</insert>
+
+	<update id="update" parameterType="com.spring.vo.TestNoticeVO">
+		update TESTNOTICE set
+		ntitle=#{ntitle},
+		ncontent=#{ncontent},
+		nfile=#{nfile},
+		nsfile=#{nsfile},
+		nfile_t=#{nfile_t},
+		nsfile_t=#{nsfile_t},
+		ndate=#{ndate},
+		nhits=0,
+		where nid=#{nid}
+	</update>
+
+	<delete id="delete" parameterType="java.lang.String">
+		delete from TESTNOTICE where
+		nid=#{nid}
+	</delete>
+
+</mapper>

@@ -1,0 +1,862 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap");
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+body {
+  color: #111;
+  background: #fff;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+p {
+  display: block;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+b {
+  font-weight: bold;
+}
+button {
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+strong {
+  font-weight: bold;
+}
+strike {
+  text-decoration: line-through;
+}
+#coffeGuideBanner {
+  position: relative;
+  width: 730px;
+  height: 153px;
+  background: #ebeae6;
+  font-size: 0;
+  cursor: default;
+  float: right;
+}
+.index-banner1-img1 {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  width: 200px;
+}
+.index-banner1-img2 {
+  position: absolute;
+  left: 665px;
+  top: 89px;
+  width: 10px;
+}
+.index-banner1-txt {
+  position: absolute;
+  font-size: 15px;
+  color: #888;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  left: 600px;
+  top: 88px;
+  border-bottom: 1px solid #000;
+  width: 70px;
+}
+.index-banner1-maintxt {
+  text-align: left;
+  padding: 48px 0 0 204px;
+}
+.index-banner1-maintxt > h1 {
+  font-size: 15px;
+  color: #888;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+}
+.index-banner1-maintxt > h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 14px;
+  letter-spacing: -0.04em;
+  color: #111;
+  line-height: 28px;
+}
+.index-h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.index-p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+#coffeeMonth {
+  background: url(http://localhost:9000/project/images/index_coffe_table.jpg) top center no-repeat;
+  float: left;
+  width: 100%;
+  margin: 0 auto 20px;
+  color: #000;
+  background-size: cover;
+  margin-top: 120px;
+}
+.monthBox {
+  width: 1080px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+.monthBox > h1 {
+  font-size: 40px;
+  padding-bottom: 10px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+}
+.monthBox > h2 {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(102, 93, 93);
+}
+.monthBox > ul {
+  margin: 80px 0;
+  list-style: none;
+  font-size: 0;
+}
+.monthBox > ul > li {
+  display:inline-block;
+  width: 300px;
+  margin-right: 40px;
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.monthBox > ul > li > a {
+  display: block;
+  position: absolute;
+  width: 285px;
+  height: 343px;
+  z-index: 9;
+}
+.index-banner3 {
+  margin: -20px auto 0;
+  width: 260px;
+  height: 213px;
+  overflow: hidden;
+  font-size: 0;
+}
+.index-banner3 > p {
+  width: 60px;
+  height: 34px;
+  background: #000;
+  line-height: 34px;
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  font-size: 12px;
+  font-weight: 700;
+}
+.index-banner3 > img {
+  width: 260px;
+}
+
+.monthBox > ul > li > h1 {
+  font-size: 17px;
+  font-weight: 800;
+  text-align: left;
+  margin: 20px 20px 5px;
+}
+.monthBox > ul > li > h2 {
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  margin: 0 20px 40px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.monthBox > del {
+  text-decoration: line-through;
+}
+.monthBox > b {
+  font-weight: bold;
+}
+.monthBox > ul > li > h3 {
+  font-size: 14px;
+  text-align: right;
+  margin: 40px 20px 20px;
+  font-weight: 400;
+}
+.monthBox > ul > li img {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.6s ease-in-out;
+  overflow: hidden;
+}
+.monthBox > ul > li:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.index-banner4-tag {
+  border: 1px solid #eaeaea;
+  color: #333;
+  display: table;
+  padding: 10px 16px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 14px;
+  border-radius: 100px;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+.index-banner4-tag2 {
+  border: 1px solid #4d825c;
+  color: #fff;
+  background: #4d825c;
+  display: table;
+  padding: 10px 16px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 14px;
+  border-radius: 100px;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+.index-banner4-tag:hover {
+  border: 1px solid #4d825c;
+  color: #4d825c;
+  transition: all 0.3s ease-in-out;
+}
+.index-banner4-tag2:hover {
+  border: 1px solid #4d825c;
+  color: #4d825c;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+#mainProduct {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: 20px auto 140px;
+}
+#mainProduct > .productBox {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+.ec-base-product {
+  margin: 22px 0 0;
+}
+.ec-base-product .prdList {
+  display: table;
+  min-width: 756px;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+}
+.ec-base-product ul.grid3 > li {
+  width: 33.33%;
+}
+.ec-base-product .prdList > li {
+  position: relative;
+  display: inline-block;
+  margin: 14px 0 20px;
+  color: #757575;
+  vertical-align: top;
+}
+.ec-base-product .prdList .thumbnail {
+  position: relative;
+  margin: 10px 7px;
+}
+.ec-base-product .prdList .thumbnail a img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.ec-base-product img {
+  vertical-align: middle;
+}
+.ec-base-product .prdList .thumbnail .icon_box {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.ec-base-product .prdList .thumbnail .icon_box img {
+  max-height: 30px;
+  width: auto;
+}
+.ec-base-product .prdList .thumbnail a img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.ec-base-product img {
+  vertical-align: middle;
+}
+.prdreview {
+  color: #d86232;
+  font-size: 12px;
+}
+.displaynone {
+  display: none !important;
+}
+.ec-base-product .prdList .description {
+  margin: 0 5px;
+  padding: 0 7px;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.ec-base-product .prdList .description .name {
+  display: block;
+  font-weight: normal;
+  letter-spacing: -0.04em;
+}
+.ec-base-product .prdList .description .name a {
+  color: #2e2e2e;
+  font-size: 17px !important;
+  text-decoration: none;
+}
+.ec-base-product .spec {
+  margin: 0;
+  width: 90%;
+}
+.ec-base-product ul.grid3 li .description .summaryDesc {
+  text-align: center;
+}
+.ec-base-product .prdList .description .summaryDesc {
+  display: block;
+  margin-top: 8px;
+  line-height: 14px;
+  color: #ababab;
+}
+.ec-base-product .prdList .description .simpleDesc {
+  text-align: center;
+  margin: 6px 0;
+  font-size: 13px;
+  color: #999999;
+  line-height: 14px;
+}
+.ec-base-product .prdList .description .custom {
+  width: auto;
+  margin-right: 10px;
+  line-height: 32px;
+  display: inline-block;
+}
+.ec-base-product .prdList .description .price {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  font-size: 15px;
+  vertical-align: middle;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  vertical-align: top;
+  color: #000 !important;
+  margin-top: 15px;
+}
+.ec-base-product .prdList .description .sale {
+  height: 16px;
+  line-height: 16px;
+}
+.ec-base-product ul.grid3 > li .color {
+  max-width: 230px;
+}
+.ec-base-product .spec li {
+  text-align: left;
+}
+
+.ec-base-product ul.grid4 > li {
+  width: 25%;
+}
+.ec-base-product .prdList .thumbnail a img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.ec-base-product .prdList .thumbnail .box2 {
+  margin-left: 0;
+}
+.ec-base-product .prdList .thumbnail .icon_box img {
+  max-height: 30px;
+  width: auto;
+}
+.ec-base-product .prdList .description .name a {
+  color: #2e2e2e;
+  font-size: 17px !important;
+  text-decoration: none;
+}
+.ec-base-product .spec li .title {
+  font-weight: normal;
+  vertical-align: top;
+}
+.ec-base-product .prdList .des2 {
+  margin-left: 0;
+  font-size: 0;
+}
+.ec-base-product .spec2 {
+  width: 100%;
+  padding-left: 0;
+}
+
+.index-content{
+	width:500px;
+	height: 500px;
+}
+
+
+
+
+#contentsWrap {
+  margin: 0 auto;
+}
+#subtop {
+  position: fixed;
+  margin-top: 40px;
+  right: 10%;
+  top: 20px;
+  z-index: 99;
+  width: auto;
+  height: 60px;
+  -webkit-transition-duration: 0.3;
+  transition-duration: 0.3s;
+}
+
+#subtop .subgnbinner {
+  float: right;
+  width: 250px;
+  height: 30px;
+  padding: 15px 0;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.09);
+}
+
+#subtop #log {
+  float: left;
+  font-size: 13px;
+  line-height: 30px;
+  color: #777;
+  margin: 0 0 0 40px;
+}
+#subtop #log a:first-child {
+  margin-right: 8px;
+  padding-right: 8px;
+  border-right: 1px solid rgba(0, 0, 0, 0.14);
+}
+#subtop #log a {
+  color: #777;
+}
+.titleArea {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+.titleArea h2 {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.xans-member-join .required {
+  margin: -25px 0 10px;
+  color: #353535;
+  text-align: right;
+}
+.xans-member-join .required img {
+  vertical-align: middle;
+}
+.ec-base-table table {
+  position: relative;
+  margin: 10px 0 0;
+  border: 1px solid #eaeaea;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 13px;
+}
+.ec-base-table table::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #eaeaea;
+}
+table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+th,
+td {
+  border: 0;
+  vertical-align: top;
+}
+.ec-base-table td {
+  padding: 11px 10px 10px;
+  border-top: 1px solid #eaeaea;
+  color: #353535;
+  vertical-align: middle;
+}
+.ec-base-table.typeWrite td {
+  padding: 8px 10px 7px;
+}
+.ec-base-table.typeWrite .joinkong {
+  font-size: 12px;
+  color: #da7354;
+  border: 0;
+}
+.ec-base-table.typeWrite .joinkong2 {
+  font-size: 12px;
+  color: #da7354;
+  border: 0;
+}
+.ec-base-table.typeWrite img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+.ec-base-table.typeWrite .joinkong2 input {
+  width: 340px;
+  height: 35px;
+}
+input[type="text"],
+input[type="password"] {
+  height: 18px;
+  line-height: 20px;
+  padding: 2px 4px;
+  border: 1px solid #d5d5d5;
+  color: #000;
+  font-size: 12px;
+}
+input,
+select,
+textarea {
+  font-size: 100%;
+  font-family: "noto", sans-serif;
+  color: #000;
+  vertical-align: middle;
+}
+#hp1 {
+  width: 93px;
+  margin: 0 4px 0 0;
+  height: 41px;
+  background: #fff;
+}
+.joinkong2 select {
+  border: 1px solid #d5d5d5;
+}
+.joinkong2 option {
+  font-weight: 300;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+#hp2,
+#hp3 {
+  width: 102px;
+  margin: 0 1px;
+}
+.ec-base-box_join {
+  margin-left: auto;
+  margin-right: auto;
+  color: #333;
+  font-size: 13px;
+}
+.ec-base-chk {
+  display: inline-block;
+  position: relative;
+  margin: 0 8px 0 0;
+  width: 22px;
+  height: 22px;
+  vertical-align: top;
+  cursor: pointer;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+  border: 0;
+}
+.ec-base-chk input {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.ec-base-button {
+  padding: 10px 0;
+  margin-bottom : 15px;
+  text-align: center;
+}
+.ec-base-button:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.memberloginbox .login {
+  border: 1px solid #eaeaea;
+  margin: 0 auto;
+  padding: 0;
+  color: #2e2e2e;
+  width: 500px;
+}
+.memberloginbox .login fieldset {
+  position: relative;
+  width: 380px;
+  margin: 0 auto;
+  border: none;
+  vertical-align: top;
+}
+#login-wrap .idbox input {
+  border: 1px solid #eee;
+  width: 240px;
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 12px;
+  height: 38px;
+  background-image: url(/web/upload/ga09/login/id.gif);
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 17px;
+}
+#login-wrap .pwbox {
+  margin-top: 10px;
+}
+#login-wrap .pwbox input {
+  border: 1px solid #eee;
+  width: 240px;
+  margin: 0;
+  color: #000;
+  font-size: 12px;
+  height: 38px;
+  background-image: url(/web/upload/ga09/login/pw.gif);
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 17px;
+}
+.memberloginbox .login fieldset > button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+.memberloginbox .login fieldset ul {
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 0;
+  border: 0;
+}
+.memberloginbox .login fieldset .security {
+  padding: 0;
+  margin: 0;
+  color: #757575;
+}
+li {
+  list-style: none;
+}
+.memberloginbox .login fieldset li {
+  float: left;
+}
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  margin: 0 4px 0 2px;
+}
+input[id*="popup"] + label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #000;
+  cursor: pointer;
+}
+
+/** 아이디 비번찾기 폼 **/
+.find-id-pw-body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+.idpw_header {
+  width: 100%;
+  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+}
+div.idpw_top {
+  width: 1280px;
+  margin: auto;
+  height: 60px;
+}
+div.idpw_top img.logo {
+  width: 150px;
+  float: left;
+  padding-left: 100px;
+  padding-top: 10px;
+}
+div.idpw_container {
+  width: 1280px;
+  height: 800px;
+  margin: 0 auto;
+}
+div.idpw_content {
+  margin: 0 auto;
+  width: 400px;
+  height: 800px;
+}
+div.idpw_content h2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+div.idpw {
+  width: auto;
+  height: 600px;
+}
+div.idpw_head {
+  background-color: #e8e8e8;
+  padding: 10px 20px;
+  height: 20px;
+}
+div.idpw_body {
+  padding: 20px;
+}
+div.idpw_body b {
+  height: 150px;
+}
+div.idpw input {
+  width: 93%;
+  height: 50px;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  outline: none;
+}
+div.idpw input:first-child {
+  margin-bottom: 25px;
+}
+/* 글씨*/
+div.idpw small {
+  margin: 10px 0;
+  margin-bottom: 10px;
+  font-size: 11px;
+  color: #888888;
+  display: block;
+}
+/* 아이디 비밀번호찾기 버튼*/
+div.idpw button {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: normal;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: linear-gradient(to right, rgb(46, 50, 56), rgb(37, 42, 51), rgb(103, 107, 114));
+  background-size: 200%;
+  transition: 0.5s;
+  color: #fff;
+  outline: none;
+}
+/* 아이디 비밀번호찾기 버튼 호버*/
+div.idpw button:hover {
+  background-position: right;
+}
+
+div.pw-content button {
+  margin-top: 10px;
+}
+div.idpw_btn a {
+  color: rgb(46, 50, 56)
+  margin: 0 5px;
+  text-decoration: none;
+}
+div.idpw_btn a:last-child {
+  float: right;
+}
+/* 마우스 가져가면 굵어짐*/
+div.idpw_btn a:hover {
+  color:  rgb(108, 110, 114);
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* 밑에 쪼만한 글씨*/
+div.idpw_copyright {
+  text-align: center;
+  color: #888888;
+}
+/* 아이디폼 회색 테두리*/
+div.id-content {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+/* 비밀번호폼 회색 테두리*/
+div.pw-content {
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}
+div.idpw_btn {
+  margin-top: 10px;
+}
+/*워닝 아이콘 영역*/
+.icon-form {
+  padding-bottom: 5px;
+  animation: 0.3s ease;
+  animation-iteration-count: 3;
+}
+/*워닝 아이콘 사이즈*/
+.fa-exclamation-triangle {
+  color: #ff7262;
+  font-size: 13px;
+}
+/*워닝 메시지*/
+p.warningmsg {
+  display: inline;
+  font-size: 13px;
+  color: #ff7262;
+}
